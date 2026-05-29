@@ -114,12 +114,23 @@
     -webkit-text-stroke: 1.5px var(--color-paper);
     color: transparent;
   }
+  .stroke-text-ink {
+    -webkit-text-stroke: 1.5px var(--color-ink);
+    color: transparent;
+  }
   .marquee {
     animation: marquee 28s linear infinite;
   }
   @keyframes marquee {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
+  }
+  .grain-light::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(10,10,10,0.08) 1px, transparent 1px);
+    background-size: 3px 3px;
+    pointer-events: none;
   }
   .grain::before {
     content: "";
