@@ -1,1 +1,7 @@
-{}
+{
+  "installCommand": "bun install",
+  "buildCommand": "bun run build",
+  "outputDirectory": ".output",
+  "cleanUrls": true,
+  "framework": null
+}
