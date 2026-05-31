@@ -1,7 +1,9 @@
 {
   "installCommand": "bun install",
   "buildCommand": "bun run build",
-  "outputDirectory": ".output",
+  "outputDirectory": "dist",
   "cleanUrls": true,
-  "framework": null
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
