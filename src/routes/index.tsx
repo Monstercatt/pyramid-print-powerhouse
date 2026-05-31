@@ -1,3 +1,4 @@
+// Deployment trigger: branding update
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { Hero } from "@/components/site/Hero";
