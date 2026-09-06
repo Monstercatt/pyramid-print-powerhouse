@@ -1,6 +1,6 @@
 [build]
   command = "bun install && bun run build"
-  publish = "dist"
+  publish = "dist/client"
 
 # Single-page app fallback: all routes serve the prerendered index.html
 [[redirects]]
