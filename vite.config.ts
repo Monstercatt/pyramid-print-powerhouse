@@ -12,9 +12,6 @@ export default defineConfig({
   tanstackStart: {
     pages: [{ path: "/" }],
     prerender: { enabled: true, autoStaticPathsDiscovery: false },
-    server: {
-      entry: "server",
-      preset: "static",
-    },
+    nitro: { preset: "static" },
   },
 });
